@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Digital LEAP",
+    "slug": "digital-leap",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#003580"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "sl.edu.limkokwing.digitalleap"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "backgroundColor": "#003580"
+      },
+      "package": "sl.edu.limkokwing.digitalleap",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "LEAP requires your location to verify internship attendance. Location is only collected with your consent."
+        }
+      ]
+    ],
+    "scheme": "digitalleap",
+    "extra": {
+      "apiBaseUrl": "http://localhost/digital-leap-api"
+    }
+  }
+}
